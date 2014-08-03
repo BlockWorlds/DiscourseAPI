@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="D:/Users/Christian/Downloads/craftbukkit-1.7.2-R0.3 (1).jar"/>
+	<classpathentry kind="lib" path="D:/Users/Christian/Downloads/httpcomponents-client-4.3.4-bin/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="D:/Users/Christian/Downloads/httpcomponents-client-4.3.4-bin/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Users/Christian/Downloads/httpcomponents-client-4.3.4-bin/fluent-hc-4.3.4.jar"/>
+	<classpathentry kind="lib" path="D:/Users/Christian/Downloads/httpcomponents-client-4.3.4-bin/httpclient-4.3.4.jar"/>
+	<classpathentry kind="lib" path="D:/Users/Christian/Downloads/httpcomponents-client-4.3.4-bin/httpclient-cache-4.3.4.jar"/>
+	<classpathentry kind="lib" path="D:/Users/Christian/Downloads/httpcomponents-client-4.3.4-bin/httpcore-4.3.2.jar"/>
+	<classpathentry kind="lib" path="D:/Users/Christian/Downloads/httpcomponents-client-4.3.4-bin/httpmime-4.3.4.jar"/>
+	<classpathentry kind="lib" path="D:/Users/Christian/Downloads/discourse-api-client-0.0.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
