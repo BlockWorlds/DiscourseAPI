@@ -15,9 +15,9 @@ import com.wareninja.opensource.discourse.DiscourseApiClient;
 import com.wareninja.opensource.discourse.utils.ResponseListener;
 import com.wareninja.opensource.discourse.utils.ResponseMeta;
 import com.wareninja.opensource.discourse.utils.ResponseModel;
+
 public class DiscourseAPI extends JavaPlugin{
 	public void onEnable(){
-		
 		try {
             final File[] libs = new File[] {
                     new File(getDataFolder(), "commons-codec-1.6.jar"),
@@ -46,9 +46,13 @@ public class DiscourseAPI extends JavaPlugin{
                 }
                 addClassPath(JarUtils.getJarUrl(lib));
             }
+            
         } catch (final Exception e) {
             e.printStackTrace();
         }
+		
+	}
+	public void onDisable(){
 		
 	}
 	private void addClassPath(final URL url) throws IOException {
@@ -66,9 +70,10 @@ public class DiscourseAPI extends JavaPlugin{
                     + " to system classloader");
         }
     }
-	private final DiscourseApiClient apiclient;
-	private final ResponseListener response;
-	public DiscourseAPI(String api_url, String api_key, String api_username){
+	private DiscourseApiClient apiclient;
+	private ResponseListener response;
+	
+	public void initiate(String api_url, String api_key, String api_username){
 		apiclient = new DiscourseApiClient(api_url, api_key, api_username);
 		response = new ResponseListener(){
 

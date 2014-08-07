@@ -2,3 +2,4 @@ name: DiscourseAPI
 main: com.thedreamsanctuary.discourseapi.DiscourseAPI
 version: 1.0
 author: Shinigami97
+description: A Discourse Forums API
